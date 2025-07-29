@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Aditiii!!!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes it mobile responsive -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #ffe6f0;
+      background-image: linear-gradient(to bottom right, #ffe6f0, #ffd6ec);
+    }
+
+    .card {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff0f6;
+      border: 4px solid #ff99c8;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .title {
+      font-size: 36px;
+      color: #ff4081;
+      margin-bottom: 10px;
+      min-height: 50px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .date {
+      background: #ffb3c6;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      display: inline-block;
+      color: rgb(220, 20, 60);
+    }
+
+    .message-button {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 14px 24px;
+      border: 2px solid #ff4081;
+      background-color: #ffe0eb;
+      color: #ff4081;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .message-button:hover {
+      background-color: #ffccdd;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ff4081;
+      margin: 20px 0;
+    }
+
+    .caption {
+      font-size: 18px;
+      color: #d6336c;
+      font-weight: bold;
+      margin-top: -10px;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    /* 🔻 Media Query for Small Screens (phones) */
+    @media screen and (max-width: 480px) {
+      .card {
+        margin: 20px 10px;
+        padding: 15px;
+        border-width: 2px;
+      }
+
+      .title {
+        font-size: 28px;
+        min-height: 40px;
+      }
+
+      .date {
+        font-size: 16px;
+        padding: 8px 16px;
+      }
+
+      .message-button {
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 25px;
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+        margin: 15px 0;
+      }
+
+      .caption {
+        font-size: 16px;
+      }
+
+      .footer {
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="title" id="birthday-text"></div>
+    <div class="date">💖 25 July, 2025 💖</div>
+
+    <div>
+      <button class="message-button" onclick="showLetter()">
+        { For You ,Beautiful Aditi <br> (click here) ! } ✉️
+      </button>
+    </div>
+
+    <img src="aditi.png" alt="Aditi" class="profile-pic">
+    <div class="caption">O Aditiiiii!!</div>
+
+    <div class="footer">[ Crafted : Mayank Baghel ]</div>
+  </div>
+
+  <script>
+    // Typing animation for "Happy Birthday"
+    const text = "🎉 Happy Birthday Aditi! 🎉";
+    const target = document.getElementById("birthday-text");
+    let i = 0;
+
+    function typeEffect() {
+      if (i < text.length) {
+        target.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 100);
+      }
+    }
+
+    typeEffect();
+
+    function showLetter() {
+      const message = `
+🎂 Dear Aditiii,
+
+Sorry for wishing you late... but better late than never!
+
+Thank you for having such a beautiful and genuine smile.
+It brightens not just your face, but the day of everyone around you.
+
+Sorry, Aditi, for everything.
+Wishing you joy, laughter, love, and dreams come true.
+
+💖 Happy Birthday once again!
+
+– Yours truly,
+Mayank
+      `;
+      alert(message);
+    }
+  </script>
+
+</body>
+</html>
